@@ -13,9 +13,10 @@
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about" >About</a>
-            <a href="#services" >Services</a>
-            <a href="#contacts" >Contacts</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
         </nav>
     </header>
     <section class="home" id="home">
@@ -71,21 +72,50 @@
             </div>
         </div>
     </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">My Projects</h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>BMI Calculator</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ut ex ipsum. Corrupti perspiciatis officia cum, corporis, vero magni blanditiis sequi quisquam magnam consequuntur nesciunt repellat soluta. Aspernatur, nemo harum!</p>
+                    <p class=""><a href="https://github.com/LearnerMahi/BMI-Calculator">GitHub link</a></p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Tic Tac Toe</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ut ex ipsum. Corrupti perspiciatis officia cum, corporis, vero magni blanditiis sequi quisquam magnam consequuntur nesciunt repellat soluta. Aspernatur, nemo harum!</p>
+                    <p class=""><a href="https://github.com/LearnerMahi/tictactoe">GitHub link</a></p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Study MEET</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ut ex ipsum. Corrupti perspiciatis officia cum, corporis, vero magni blanditiis sequi quisquam magnam consequuntur nesciunt repellat soluta. Aspernatur, nemo harum!</p>
+                    <p class=""><a href="https://github.com/LearnerMahi/StudyPartner">GitHub link</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="contact" id="contacts">
         <h2 class="heading">Contact<span>Me</span></h2>
-        <form action="#">
+        <form onsubmit="sendEmail(event);">
             <div class="input-box">
-            <input type="text" placeholder="FullName">
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-         <input type="submit" value="Send Message" class="btn">
+                <input type="text" id="name" placeholder="FullName" required>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" id="phone" placeholder="Phone Number">
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message to me" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+    
+    
     <footer class="footer">
         <div class="social">
             <!-- <a href="https://github.com/LearnerMahi"><i class='bx bxl-github'></i></a>
@@ -106,5 +136,6 @@
         </p>
     </footer>
     <script src="script.js"></script>
+    
 </body>
 </html>
